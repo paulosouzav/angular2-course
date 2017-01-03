@@ -8,9 +8,11 @@ import { Recipe } from '../recipe';
 })
 export class RecipeListComponent implements OnInit {
 
-	recipes: Recipe[] = [];
-	@Output() recipeSelected = new EventEmitter();
-	recipe = new Recipe('Dummy', 'Dummy', 'http://manhattanpizzaplacehga.com/wp-content/uploads/2016/03/wafswectpmbr0zmug9ly.jpg')
+	recipes: Recipe[] = [
+		new Recipe('Pizza de Pepperoni', 'Massa de Pizza', 'http://manhattanpizzaplacehga.com/wp-content/uploads/2016/03/wafswectpmbr0zmug9ly.jpg',[]),
+		new Recipe('Pasta', 'Deliciosa', 'http://s3.amazonaws.com/etntmedia/media/images/ext/945700245/hot-sauce-Arrabiata-pasta.jpg',[])
+	];
+	@Output() recipeSelected = new EventEmitter<Recipe>();
 
 	constructor() { }
 
