@@ -1,2 +1,2 @@
-# angular2-recipe-book
+# angular2-course
 Recipe book project developed using Angular 2
